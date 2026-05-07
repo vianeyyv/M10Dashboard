@@ -1,0 +1,76 @@
+---
+title: "Interactive Dashboard"
+format: dashboard
+---
+
+```{r}
+#| messages: false
+library(ggplot2)
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+df <- read.csv("Employment - National - Weekly.csv")
+
+# Create date column
+df$date <- as.Date(paste(df$year, df$month, df$day_endofweek, sep = "-"))
+```
+
+```{r}
+#| title: Overall Employment Trend
+ggplot(df, aes(x = date, y = emp)) +
+  geom_line(color = "pink") +
+  labs(x = "Date", y = "Employment")
+```
+
+```{r}
+df <- read.csv("Employment - National - Weekly.csv")
+
+df$date <- as.Date(paste(df$year, df$month, df$day_endofweek, sep = "-"))
+
+df <- df %>%
+  mutate(
+    emp_incq1 = as.numeric(emp_incq1),
+    emp_incq2 = as.numeric(emp_incq2),
+    emp_incq3 = as.numeric(emp_incq3),
+    emp_incq4 = as.numeric(emp_incq4)
+  )
+
+df_long <- df %>%
+  select(date, emp_incq1, emp_incq2, emp_incq3, emp_incq4) %>%
+  pivot_longer(
+    cols = starts_with("emp_incq"),
+    names_to = "income_group",
+    values_to = "employment"
+  )
+
+ggplot(df_long, aes(x = income_group, y = employment, fill = income_group)) +
+  geom_col() +
+  labs(
+    title = "Employment by Income Group",
+    x = "Income Group",
+    y = "Employment",
+    fill = "Income Group"
+  ) +
+  theme_minimal()
+```
+
+::: callout note 
+emp_incq# stands for employment, income quartile, and # is the group 
+:::
+
+```{r}
+library(tidyverse)
+
+df <- read.csv("Employment - National - Weekly.csv")
+
+df$date <- as.Date(paste(df$year, df$month, df$day_endofweek, sep = "-"))
+```
+
+```{r}
+#| title: Distribution of Employment Changes
+ggplot(df, aes(x = emp)) +
+  geom_histogram(bins = 30, fill = "pink") +
+  labs(x = "Employment Change", y = "Count")
+```

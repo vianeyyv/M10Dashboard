@@ -1,0 +1,24 @@
+---
+title: "Shiny App Summary"
+---
+
+## Create a lecture note that you can use to teach the person. This will become part of the website under "Essay on Shiny Apps.
+
+When you think of the Shiny app, think of a website that is interactive, that was built in Rstudio. The Shiny app creates interactive dashboards. It makes it more fun because instead of having a static website, the viewers are able to interactive with the data visuals like:
+
+- click buttons
+- choose different options 
+- move sliders 
+
+To create the interactive dashbaord, you have to have a user interface which is what the users see and a server. 
+
+**User Interface**
+- the intercative dashboards 
+- titles
+- charts/graphs 
+
+**Server**
+- codes
+- controls dashbaord
+- process information 
+- updates the graphs 

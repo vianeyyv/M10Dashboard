@@ -1,0 +1,7 @@
+---
+title: "Shiny Live"
+---
+
+## What is Shinylive? Assume that you are also explaining it to your coworkers. How does it differ from the traditional Shiny app introduced in Step 2? What are the pros and cons of Shinylive in comparison with Shiny Apps?
+
+Shinylive is helpful when you need to use Shiny apps. it avoids needing a server because Shinylive removes it by simply running the information directly from the device. To use Shinylive, you need R codes. In other words it's more simply than Shiny Apps. Shinylive should be used when you want to teach someone about interactive websites, want easier deployment, and if you want a simple interactive dashboard. 

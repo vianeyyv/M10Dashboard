@@ -1,0 +1,19 @@
+---
+title: "Welcome to My M10 Quarto Website"
+---
+
+## overview:
+
+For today's assignment,I'm going to imply what I learned in the modeule, which was to create a dashboard and a website. During the lecture video, I learned how to use python, shiny, and create dashboards from datasets. 
+
+## Dashboard:
+
+On my dashboard section, I will create graphs and data visuals based off a COVID employment dataset. 
+
+## Shiny App
+
+On this tab, I will summarize what I learned about shiny app and try to explain as if I was telling a friend. 
+
+## Shiny live 
+
+I will explain what shiny live is, after watching the lecture video and doing further research. 
