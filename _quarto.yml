@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "M10 Quarto Website"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Dashboard"
+        href: dashboard.qmd
+      - text: "Essay on Shiny Apps"
+        href: shiny-apps.qmd
+      - text: "Essay on Shiny Live"
+        href: shinylive.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+    

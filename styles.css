@@ -1,0 +1,76 @@
+/* General page background */
+body {
+  background-color: #f5efe6; /* light nude */
+  color: #3e3e3e;
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #a67c52; /* warm brown */
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: #c69c6d;
+}
+
+a:hover {
+  color: #8c6239;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #e8dccb !important;
+}
+
+.navbar a {
+  color: #5c4a3f !important;
+}
+
+/* Cards / sections */
+.card {
+  background-color: #fffaf5;
+  border: 1px solid #e0d6c8;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #c69c6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+button:hover, .btn:hover {
+  background-color: #a67c52;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #f0e6d8;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+/* Tables */
+table {
+  background-color: #fffaf5;
+  border: 1px solid #e0d6c8;
+}
+
+th {
+  background-color: #e8dccb;
+}
+
+/* Footer */
+footer {
+  background-color: #e8dccb;
+  color: #5c4a3f;
+  padding: 10px;
+  text-align: center;
+}
